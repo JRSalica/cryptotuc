@@ -2,18 +2,18 @@ import { fireEvent, screen, waitFor } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import { CryptoItems, SearchBox } from '../../components/CoinCotizer';
 import { renderWithProviders } from '../../utils/test/test-utils';
-import CoinCotizer from './CoinCotizer';
+import CoinQuoter from './CoinQuoter';
 import { coinsMockData } from '../../utils/test/mock-data';
 
-describe('CoinCotizer Test', () => {
+describe('CoinQuoter Test', () => {
   test('Deberia renderizar el componente CoinCotizer', () => {
-    renderWithProviders(<BrowserRouter><CoinCotizer coins={coinsMockData} /></BrowserRouter>);
+    renderWithProviders(<BrowserRouter><CoinQuoter coins={coinsMockData} /></BrowserRouter>);
     const element = screen.getByText('Cotizador');
     expect(element).toBeInTheDocument();
   });
 
   test('render Items', async () => {
-    renderWithProviders(<BrowserRouter><CoinCotizer coins={coinsMockData} /></BrowserRouter>);
+    renderWithProviders(<BrowserRouter><CoinQuoter coins={coinsMockData} /></BrowserRouter>);
     await expect(screen.getByText('Bitcoin')).toBeInTheDocument();
   });
 

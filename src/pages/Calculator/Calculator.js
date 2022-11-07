@@ -80,7 +80,7 @@ const Calculator = ({ coins, rates }) => {
             'text-white': theme === 'dark',
           })}>2. Ingresa la cantidad: </label>
           <input data-testid='coin-value' onChange={(ev) => setCoinInputValue(ev.target.value)}
-            type='text' defaultValue={0} min={0} className='form-control form-control-md' pattern='^[0-9]*(?:\.[0-9]*)?$' />
+            type='number' defaultValue={0} min={0} className='form-control form-control-md' pattern='^[0-9]*(?:\.[0-9]*)?$' />
         </div>
         <div className='col-md-6 mt-4'>
           <label className={classNames('form-label pb-2', {

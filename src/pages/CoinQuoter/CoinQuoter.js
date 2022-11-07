@@ -1,9 +1,9 @@
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 import { React, useEffect, useState } from 'react';
-import { CryptoItems, SearchBox } from '../../components/CoinCotizer';
+import { CryptoItems, SearchBox } from '../../components/CoinQuoter';
 
-const CoinCotizer = ({ coins }) => {
+const CoinQuoter = ({ coins }) => {
   const { theme } = useSelector((state) => state.theme);
   const [filteredCoins, setFilteredCoins] = useState(coins);
 
@@ -42,4 +42,4 @@ const CoinCotizer = ({ coins }) => {
   );
 };
 
-export default CoinCotizer;
+export default CoinQuoter;

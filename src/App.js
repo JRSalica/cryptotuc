@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import { Header, Footer } from './components/Layout';
 import useFetch from './hooks/useFetch/useFetch';
 import {
-  Home, CoinCotizer, Calculator, NotFound, Chart,
+  Home, CoinQuoter, Calculator, NotFound, Chart,
 } from './pages';
 import './scss/custom.scss';
 
@@ -36,7 +36,7 @@ const App = () => {
       <main>
         <Routes>
           <Route index path='/' element={<Home />} />
-          <Route path='/cotizer' element={<CoinCotizer coins={allCoins} />} />
+          <Route path='/cotizer' element={<CoinQuoter coins={allCoins} />} />
           <Route path='/calculator' element={<Calculator rates={allRates} coins={allCoins} />} />
           <Route path='/calculator/:cryptoId' element={<Calculator rates={allRates} coins={allCoins} />} />
           <Route path='/chart' element={<Chart coins={allCoins} />} />

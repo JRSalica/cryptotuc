@@ -36,7 +36,7 @@ const Home = () => {
             'bg-dark': theme === 'dark',
           })}>
             <img src={criptycurrency} alt='cotizer feature icon' className='img-fluid w-25 mb-3' />
-            <h3 className='text-center mb-3'>Cotizacion</h3>
+            <h4 className='text-center mb-3'>Cotizacion</h4>
             <p className='text-center'>Valoracion en tiempo real para diversas criptomonedas.</p>
           </div>
           <div className={classNames('col-10 col-sm-12 col-md-3  text-light d-flex flex-column align-items-center rounded-3 p-3 mb-5 mb-md-0', {
@@ -44,7 +44,7 @@ const Home = () => {
             'bg-dark': theme === 'dark',
           })}>
             <img src={swap} alt='swap feature icon' className='img-fluid w-25 mb-3' />
-            <h3 className='text-center mb-3'>Conversor</h3>
+            <h4 className='text-center mb-3'>Conversor</h4>
             <p className='text-center'>Conversor para distintas monedas de la region.</p>
           </div>
           <div className={classNames('col-10 col-sm-12 col-md-3  text-light d-flex flex-column align-items-center rounded-3 p-3 mb-5 mb-md-0', {
@@ -52,7 +52,7 @@ const Home = () => {
             'bg-dark': theme === 'dark',
           })}>
             <img src={chart} alt='history feature icon' className='img-fluid w-25 mb-3' />
-            <h3 className='justy mb-3'>Evolucion</h3>
+            <h4 className='justy mb-3'>Evolucion</h4>
             <p className='text-center'>Seguimiento grafico del valor de todas las monedas.</p>
           </div>
         </div>

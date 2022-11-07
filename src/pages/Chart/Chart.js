@@ -28,7 +28,7 @@ const Chart = ({ coins }) => {
       'bg-dark text-light': theme === 'dark',
     })}>
       <h3 className='text-center'><i className='bi bi-graph-up-arrow'></i></h3>
-      <h4 className='text-center'>Grafico de Precios</h4>
+      <h2 className='text-center'>Grafico de Precios</h2>
       <div className='d-flex col-8 mx-auto'>
         <select ref={cryptoSelectorRef} data-testid='crypto-selector' className='form-select'
           onChange={(ev) => setSelectedCrypto(ev.target.value)} aria-label='Cryptocurrency selector'>
